@@ -11,10 +11,19 @@ namespace DiceRoller
         static void Main(string[] args)
         {
 
-
-            Console.WriteLine(new Random().Next());
-            Console.ReadLine();
-
+            var factory = new GatheringFactory();
+            var materials = factory.GetMaterialsListing();
+            var cities = factory.GetCityListing();
+            foreach(var material in materials)
+            {
+                foreach(var city in cities)
+                {
+                    var total = factory
+                        .UnitsLost(material, city,
+                          generator.UnitsPossible(material, city));
+                }
+            }
+                        
 
 
         }

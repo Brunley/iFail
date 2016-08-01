@@ -13,8 +13,6 @@ namespace DiceRoller
         {
             return new List<Material>
             {
-
-
             new Material {Name = "Copper", Rate = 1 },
             new Material { Name = "Iron", Rate = 2 },
             new Material {Name = "Steel", Rate = 3 },
@@ -68,12 +66,39 @@ namespace DiceRoller
             new Material {Name = "Grove Hair Fur", Rate = 51 },
             new Material {Name = "Salamander Leathers", Rate = 52 },
             new Material {Name = "Skyterror Scales", Rate = 53 }
-
-
             };
+        }
 
+        public IList<City> GetCityListing()
+        {
+            return new List<City>
+        {
+            new City { Name = "Darkthorn" },
+            new City { Name = "Lightrose" },
+            new City { Name = "Cromwell" },
+            new City { Name = "Journey" },
+            new City { Name = "Glym'nar" },
+            new City { Name = "Blue Mesa" }
+
+
+        };
+        }
+
+        public int UnitsFound(Material material, City city, int possible)
+        {
 
         }
+
+        public int UnitsPossible( Material material, City city)
+        {
+
+        }
+
+        public int UnitsLost (Material material, City city, int found)
+        {
+
+        }
+            
                    
         
 
