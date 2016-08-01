@@ -12,7 +12,8 @@ namespace DiceRoller
         {
 
 
-            // Stuff goes here.
+            Console.WriteLine(new Random().Next());
+            Console.ReadLine();
 
 
 
