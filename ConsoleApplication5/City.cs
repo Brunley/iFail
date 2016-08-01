@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DiceRoller
 {
-    class City
+    public class City
     {
         public string Name { get; set; }
 

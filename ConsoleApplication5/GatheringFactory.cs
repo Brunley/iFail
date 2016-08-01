@@ -86,17 +86,17 @@ namespace DiceRoller
 
         public int UnitsFound(Material material, City city, int possible)
         {
-
+            return 0;
         }
 
         public int UnitsPossible( Material material, City city)
         {
-
+            return 0;
         }
 
         public int UnitsLost (Material material, City city, int found)
         {
-
+            return 0;
         }
             
                    
