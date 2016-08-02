@@ -86,12 +86,20 @@ namespace DiceRoller
 
         public int UnitsFound(Material material, City city, int possible)
         {
-            return 0;
+            foreach ( )
+            {
+                if (new Irregular().Next(1, 100) >  )
+                { return 1; }
+                else
+                { return 0; }
+            }
+
+
         }
 
         public int UnitsPossible( Material material, City city)
         {
-            return 0;
+            return new Irregular().Next(1, 24);
         }
 
         public int UnitsLost (Material material, City city, int found)
