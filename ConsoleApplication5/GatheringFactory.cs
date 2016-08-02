@@ -86,9 +86,9 @@ namespace DiceRoller
 
         public int UnitsFound(Material material, City city, int possible)
         {
-            foreach ( )
+            foreach (int UnitsPossible ) 
             {
-                if (new Irregular().Next(1, 100) >  )
+                if (new Irregular().Next(1, 100) > material.Rate  )
                 { return 1; }
                 else
                 { return 0; }
