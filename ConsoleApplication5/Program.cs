@@ -20,7 +20,7 @@ namespace DiceRoller
                 {
                     var total = factory
                         .UnitsLost(material, city,
-                          generator.UnitsPossible(material, city));
+                          factory.UnitsPossible(material, city));
                 }
             }
                         
