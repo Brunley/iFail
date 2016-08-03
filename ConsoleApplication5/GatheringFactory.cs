@@ -90,12 +90,13 @@ namespace DiceRoller {
             return new Irregular().Next(1, 24);
         }
 
-        private int UnitsLost(Material material, City city, int found) {
-            return 0;
+        private int UnitsKept(Material material, City city, int found) {
+            return found - 0;
+             
         }
 
         public int Find(Material material, City city) {
-            return UnitsLost(material, city,
+            return UnitsKept(material, city,
                 UnitsFound(material, city,
                     UnitsPossible(material, city)));
         }
