@@ -24,7 +24,7 @@ namespace DiceRoller
             }
 
 
-            Console.WriteLine();
+            Console.WriteLine(total);
             Console.ReadLine();
 
 
