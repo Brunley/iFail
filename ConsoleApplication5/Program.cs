@@ -19,12 +19,16 @@ namespace DiceRoller
                 foreach(var city in cities)
                 {
                     var total = factory.Find(material, city);
-                        
+
+                    Console.WriteLine(city.Name);
+                    Console.WriteLine(material.Name);
+                    Console.WriteLine(total);
+                    
                 }
             }
 
 
-            Console.WriteLine(total);
+            
             Console.ReadLine();
 
 
