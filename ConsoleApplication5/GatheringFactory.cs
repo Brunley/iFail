@@ -76,7 +76,7 @@ namespace DiceRoller {
             };
         }
 
-        public int UnitsFound(Material material, City city, int possible) {
+        private int UnitsFound(Material material, City city, int possible) {
             var generated = 0; // the number of materials generated
             for (var i = 0; i < possible; i++) {
                 if (new Irregular().Next(1, 100) > material.Rate) {
@@ -86,12 +86,18 @@ namespace DiceRoller {
             return generated;
         }
 
-        public int UnitsPossible(Material material, City city) {
+        private int UnitsPossible(Material material, City city) {
             return new Irregular().Next(1, 24);
         }
 
-        public int UnitsLost(Material material, City city, int found) {
+        private int UnitsLost(Material material, City city, int found) {
             return 0;
+        }
+
+        public int Find(Material material, City city) {
+            return UnitsLost(material, city,
+                UnitsFound(material, city,
+                    UnitsPossible(material, city)));
         }
     }
 }
