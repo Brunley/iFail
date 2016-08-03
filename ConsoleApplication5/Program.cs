@@ -19,11 +19,16 @@ namespace DiceRoller
                 foreach(var city in cities)
                 {
                     var total = factory
-                        .UnitsLost(material, city,
-                          factory.UnitsPossible(material, city));
+                        .UnitsPossible(material, city,
+                          factory.UnitsFound(material, city,
+                            factory.UnitsLost(material, city,found)));
                 }
             }
-                        
+
+
+            Console.WriteLine();
+            Console.ReadLine();
+
 
 
         }
