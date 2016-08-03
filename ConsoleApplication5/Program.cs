@@ -20,8 +20,10 @@ namespace DiceRoller
                 {
                     var total = factory.Find(material, city);
 
-                    Console.WriteLine(city.Name);
-                    Console.WriteLine(material.Name);
+                    Console.Write(city.Name);
+                    Console.Write(" | ");
+                    Console.Write(material.Name);
+                    Console.Write(" | ");
                     Console.WriteLine(total);
                     
                 }
